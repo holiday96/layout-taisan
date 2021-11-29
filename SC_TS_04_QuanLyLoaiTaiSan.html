@@ -22,12 +22,11 @@
     <link href="assets/swet/sweetalert2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
+
 <body id="page-top">
     <!-- Page Wrapper -->
     <div id="wrapper">
-
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
@@ -35,17 +34,14 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
             </a>
-    
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-    
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="/tong-quan">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Tổng quan</span></a>
             </li>
-    
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -61,16 +57,15 @@
                     </div>
                 </div>
             </li>
-    
+
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taisan"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#taisan" aria-expanded="true"
+                    aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Quản lý tài sản</span>
                 </a>
-                <div id="taisan" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
+                <div id="taisan" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" th:href="@{/loai-tai-san}">Loại tài sản</a>
                         <a class="collapse-item" th:href="@{/quan-ly-tai-san}">Tài sản</a>
@@ -79,12 +74,11 @@
                     </div>
                 </div>
             </li>
-    
-    
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#baocao"
-                    aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#baocao" aria-expanded="true"
+                    aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Báo cáo</span>
                 </a>
@@ -101,7 +95,7 @@
                     </div>
                 </div>
             </li>
-    
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#muontra"
                     aria-expanded="true" aria-controls="collapsePages">
@@ -121,7 +115,7 @@
                     </div>
                 </div>
             </li>
-    
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#nhacungcap"
                     aria-expanded="true" aria-controls="collapsePages">
@@ -141,7 +135,7 @@
                     </div>
                 </div>
             </li>
-    
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#nhaphang"
                     aria-expanded="true" aria-controls="collapsePages">
@@ -161,37 +155,32 @@
                     </div>
                 </div>
             </li>
-    
+
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Hướng dẫn</span></a>
             </li>
-    
-    
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
-    
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-    
-    
+
         </ul>
 
         <div id="content-wrapper" class="d-flex flex-column">
-
             <div id="content">
-
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-            
+
                     <!-- Topbar Search -->
                     <form
                         class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
@@ -205,10 +194,10 @@
                             </div>
                         </div>
                     </form>
-            
+
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
-            
+
                         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                         <li class="nav-item dropdown no-arrow d-sm-none">
                             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
@@ -232,7 +221,7 @@
                                 </form>
                             </div>
                         </li>
-            
+
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
@@ -280,10 +269,11 @@
                                         Spending Alert: We've noticed unusually high spending for your account.
                                     </div>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" th:href="@{/thong-bao}">Xem tất cả thông báo</a>
+                                <a class="dropdown-item text-center small text-gray-500" th:href="@{/thong-bao}">Xem tất
+                                    cả thông báo</a>
                             </div>
                         </li>
-            
+
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
@@ -312,8 +302,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -324,8 +313,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
-                                            alt="...">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -349,16 +337,15 @@
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
-            
+
                         <div class="topbar-divider d-none d-sm-block"></div>
-            
+
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle"
-                                    th:src="@{/assets/img/undraw_profile.svg}">
+                                <img class="img-profile rounded-circle" th:src="@{/assets/img/undraw_profile.svg}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -376,157 +363,17 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" th:href="@{/dang-nhap}" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" th:href="@{/dang-nhap}" data-toggle="modal"
+                                    data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Đăng xuất
                                 </a>
                             </div>
                         </li>
-            
                     </ul>
-            
-                </nav>    
+                </nav>
+
                 <div class="container-fluid">
-                    <script>
-                        function onAddLTS() {
-                            document.getElementById('addLTS').style.display = 'unset'
-                        }
-                        function offAddLTS() {
-                            document.getElementById('addLTS').style.display = 'none'
-                        }
-                        function onEditLTS() {
-                            document.getElementById('editLTS').style.display = 'unset'
-                        }
-                        function offEditLTS() {
-                            document.getElementById('editLTS').style.display = 'none'
-                        }
-                        function addProperties() {
-                            let property = document.getElementById('propsMau');
-                            let properties = document.getElementById('properties');
-                            properties.innerHTML += property.innerHTML;
-                        }
-                        function removeProps(btn) {
-                            console.log(btn.parentElement.parentElement);
-                            let properties = document.getElementById('properties');
-                            properties.removeChild(btn.parentElement.parentElement)
-                        }
-                 
-                    </script>
-                    <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto; display: none;"
-                        id="addLTS">
-                        <div aria-labelledby="swal2-title" id="thanh1" aria-describedby="swal2-content"
-                            class="swal2-popup swal2-modal swal2-show" tabindex="-1" role="dialog" aria-live="assertive"
-                            aria-modal="true" style="display: flex; width: 50%;">
-                            <button type="button" onclick="offAddLTS()" class="swal2-close">×</button>
-                            <div class="row" style="text-align: center;">
-                                <h5 class="m-3">Thêm loại tài sản</h5>
-                            </div>
-                            <div class="tabTTKH" id="addLoaiSPDetail">
-                                <div class="row mb-0 p-3">
-                                    <input type="text" placeholder="Loại tài sản" class="form-control">
-            
-                                </div>
-                                <p class="ml-1 mt-3">Chi tiết</p>
-                                <div class="col-lg-12 mb-2 pr-1" style="text-align: right;">
-                                    <div class="btn btn-primary" onclick="addProperties()">Thêm thuộc tính</div>
-                                </div>
-                                <div id="propsMau" style="display: none;">
-                                    <div class="row mb-3 ml-2 property">
-                                        <div class="col-lg-4" style="background-color: #dfe0e6;">
-                                            <input type="text" placeholder="Thuộc tính"
-                                                style="border: none; background-color: #dfe0e6;" class="form-control">
-                                        </div>
-                                        <div class="col-lg-7 pl-0">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-lg-1 pl-0 btnRemove">
-                                            <button class="btn btn-danger" onclick="removeProps(this)">-</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="properties" id="properties">
-                                    <div class="row mb-3 ml-2 property">
-                                        <div class="col-lg-11">
-                                            <input type="text" placeholder="Thuộc tính" class="form-control">
-                                        </div>
-                            
-                                        <div class="col-lg-1 pl-0 btnRemove">
-                                            <button class="btn btn-danger" onclick="removeProps(this)">-</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-0 p-3">
-                                    <textarea class="form-control" cols="30" rows="5">Mô tả</textarea>
-                                </div>
-                                <div class="footerAddHH" style="text-align: right;">
-                                    <button class="btn btn-primary" onclick="addProperties()"
-                                        style="background-color: #4bac4d; border: none;"> Thêm</button>
-                                    <button class="btn btn-primary" style="background-color: #db4e65; border: none;"
-                                        onclick="offAddLTS()"> Hủy</button>
-            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto; display: none;"
-                        id="editLTS">
-                        <div aria-labelledby="swal2-title" id="thanh1" aria-describedby="swal2-content"
-                            class="swal2-popup swal2-modal swal2-show" tabindex="-1" role="dialog" aria-live="assertive"
-                            aria-modal="true" style="display: flex; width: 50%;">
-                            <button type="button" onclick="offEditLTS()" class="swal2-close">×</button>
-                            <div class="row" style="text-align: center;">
-                                <h5 class="m-3">Chi tiết loại tài sản</h5>
-                            </div>
-                            <div class="tabTTKH" id="addLoaiSPDetail">
-                                <div class="row mb-0 p-3">
-                                    <input type="text" placeholder="Loại tài sản" value="Iphone" class="form-control">
-            
-                                </div>
-                                <p class="ml-1 mt-3">Chi tiết</p>
-                                <div class="col-lg-12 mb-2 pr-1" style="text-align: right;">
-                                    <div class="btn btn-primary" onclick="addProperties()">Thêm thuộc tính</div>
-                                </div>
-                                <div id="propsMau" style="display: none;">
-                                    <div class="row mb-3 ml-2 property">
-                                        <div class="col-lg-4" style="background-color: #dfe0e6;">
-                                            <input type="text" placeholder="Thuộc tính"
-                                                style="border: none; background-color: #dfe0e6;" class="form-control">
-                                        </div>
-                                        <div class="col-lg-7 pl-0">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-lg-1 pl-0 btnRemove">
-                                            <button class="btn btn-danger" onclick="removeProps(this)">-</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="properties" id="properties">
-                                    <div class="row mb-3 ml-2 property">
-                                        <div class="col-lg-4" style="background-color: #dfe0e6;">
-                                            <input type="text" placeholder="Thuộc tính"
-                                                style="border: none; background-color: #dfe0e6;" class="form-control">
-                                        </div>
-                                        <div class="col-lg-7 pl-0">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-lg-1 pl-0 btnRemove">
-                                            <button class="btn btn-danger" onclick="removeProps(this)">-</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-0 p-3">
-                                    <textarea class="form-control" cols="30" rows="5">Mô tả</textarea>
-                                </div>
-                                <div class="footerAddHH" style="text-align: right;">
-                                    <button class="btn btn-primary" onclick="addProperties()"
-                                        style="background-color: #4bac4d; border: none;"> Cập nhật</button>
-                                    <button class="btn btn-primary" style="background-color: #db4e65; border: none;"
-                                        onclick="offEditLTS()"> Hủy</button>
-            
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Content Row -->
                     <div class="row">
                         <div class="mb-4 ml-4 w-50">
@@ -537,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- Content Row -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
@@ -546,7 +393,10 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Danh sách loại tài sản</h6>
                                 </div>
                                 <div class="col-lg-6" style="text-align: right;">
-                                    <button class="btn btn-primary" onclick="onAddLTS()">Thêm loại tài sản</button>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#addAssetModal">
+                                        Thêm loại tài sản
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -567,11 +417,300 @@
                                             <td>1</td>
                                             <td>SP IOS</td>
                                             <td>28/09/2021 14:53:35</td>
-                                            <td><textarea name="" id="" cols="30" rows="1" class="form-control"></textarea></td>
+                                            <td>Mô tả</td>
                                             <td style="width: 100px;">
-                                                <button class="btn btn-primary" onclick="onEditLTS()"><i
-                                                        class="fas fa-edit"></i></button>
-                                                <button class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>SP IOS</td>
+                                            <td>28/09/2021 14:53:35</td>
+                                            <td>Mô tả</td>
+                                            <td style="width: 100px;">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                                    data-target="#editAssetModal">
+                                                    <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -579,9 +718,7 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
-
             </div>
 
             <!-- Footer -->
@@ -593,10 +730,8 @@
                 </div>
             </footer>
             <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
-
     </div>
 
     <a class="scroll-to-top rounded" href="#page-top">
@@ -623,30 +758,135 @@
         </div>
     </div>
 
+    <!-- add asset -->
+    <div class="modal fade" id="addAssetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thêm loại tài sản</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body form-group">
+                        <input type="text" placeholder="Tên loại tài sản" class="form-control mb-3">
+                        <div id="parentAddProperties">
+                            <div class="mb-3 row parentAddProperty">
+                                <label for="staticEmail" class="col-lg-2 col-form-label">Thuộc tính</label>
+                                <div class="col-lg-9 col-11">
+                                    <input type="text" class="form-control" id="staticEmail" placeholder="Thuộc tính">
+                                </div>
+                                <div class="col-1">
+                                    <button class="btn btn-danger" onclick="removePropertiesModalAdd(this)">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary float-right mb-3" onclick="addPropertiesModalAdd()">
+                            Thêm thuộc tính
+                        </button>
+                        <textarea class="form-control" cols="30" rows="5">Mô tả</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="addProperties()"
+                        style="background-color: #4bac4d; border: none;">Thêm</button>
+                    <button class="btn btn-primary" style="background-color: #db4e65; border: none;"
+                        onclick="offAddLTS()">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- edit asset -->
+    <div class="modal fade" id="editAssetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cập nhật loại tài sản</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body form-group">
+                        <div class="row mb-3">
+                            <input type="text" placeholder="Loại tài sản" value="Iphone" class="form-control">
+                        </div>
+                        <p class="ml-1 mt-3">Chi tiết</p>
+                        <div class="col-lg-12 mb-2 pr-1" style="text-align: right;">
+                            <div class="btn btn-primary" onclick="addProperties()">Thêm thuộc tính</div>
+                        </div>
+                        <div class="properties" id="properties">
+                            <div class="row mb-3 ml-2 property">
+                                <div class="col-lg-4" style="background-color: #dfe0e6;">
+                                    <input type="text" placeholder="Thuộc tính"
+                                        style="border: none; background-color: #dfe0e6;" class="form-control">
+                                </div>
+                                <div class="col-lg-7 pl-0">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-lg-1 pl-0 btnRemove">
+                                    <button class="btn btn-danger" onclick="removeProps(this)">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-0 p-3">
+                            <textarea class="form-control" cols="30" rows="5">Mô tả</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="addProperties()"
+                        style="background-color: #4bac4d; border: none;">Thêm</button>
+                    <button class="btn btn-primary" style="background-color: #db4e65; border: none;"
+                        onclick="offAddLTS()">Hủy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Core plugin JavaScript-->
-<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script>
+        function addPropertiesModalAdd() {
+            let propertiesId = $('.parentAddProperty');
+            if (propertiesId.length > 0) {
+                $('#parentAddProperties').append(propertiesId[0].outerHTML)
+            }
+        }
+        function removePropertiesModalAdd(btn) {
+            let properties = document.getElementById('parentAddProperties');
+            properties.removeChild(btn.parentElement.parentElement)
+        }
+        function addProperties() {
+            let propertiesId = $('.parentAddProperty');
+            if (propertiesId.length > 0) {
+                $('#parentAddProperties').append(propertiesId[0].outerHTML)
+            }
+        }
+        function removeProps(btn) {
+            let properties = document.getElementById('parentAddProperties');
+            properties.removeChild(btn.parentElement.parentElement)
+        }
+    </script>
 
-<!-- Custom scripts for all pages-->
-<script src="assets/js/sb-admin-2.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Page level plugins -->
-<script src="assets/vendor/chart.js/Chart.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Page level custom scripts -->
-<script src="assets/js/demo/chart-area-demo.js"></script>
-<script src="assets/js/demo/chart-pie-demo.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="assets/js/sb-admin-2.min.js"></script>
 
-<!-- Page level plugins -->
-<script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-<!-- Page level custom scripts -->
-<script src="assets/js/demo/datatables-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="assets/js/demo/datatables-demo.js"></script>
 </body>
 
 
