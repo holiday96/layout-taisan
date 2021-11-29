@@ -9,23 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Custom fonts for this template-->
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="assets/swet/sweetalert2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <div w3-include-html="commons/css.html"></div>
 </head>
 
 <body class="bg-gradient-primary">
 
     <div class="container">
-
+        <include src="./SC_LG_03_DangKi.html"></include>
+        <link rel="import" href="./SC_LG_03_DangKi.html">
+        <!-- @include('SC_LG_03_DangKi.html') -->
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
@@ -96,8 +88,7 @@
 
     <!-- Custom scripts for all pages-->
     <script th:src="assets/js/sb-admin-2.min.js"></script>
-
-
+    <script src="assets/js/include-HTML.js"></script>
 
 </body>
 
